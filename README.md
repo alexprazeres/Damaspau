@@ -7,4 +7,4 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-<img src="![image](https://user-images.githubusercontent.com/23483794/130079665-77e2d4b1-4015-4047-9940-2319f9d247ac.png)">
+<img src="https://user-images.githubusercontent.com/23483794/130079665-77e2d4b1-4015-4047-9940-2319f9d247ac.png">
