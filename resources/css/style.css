@@ -1,0 +1,8 @@
+
+.fundo-fixo{
+    background-image: url('/images/bgnavbar.jpg');
+    border-top: 1px solid #222;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-color: #181818;
+}
