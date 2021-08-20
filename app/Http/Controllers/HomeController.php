@@ -12,8 +12,9 @@ class HomeController extends Controller
     //
     public function index()
     {
-        $modelos = Modelo::where('ativo',1)->whereRaw("LENGTH(sobre) > 50")->orderBy('id','DESC')->limit(3)->get();
+        $destaques = Modelo::where('ativo',1)->whereRaw("LENGTH(sobre) > 50")->orderBy('id','DESC')->limit(3)->get();
+        $modelos = Modelo::where('ativo',1)->orderBy('id','DESC')->get();
 
-        return Inertia::render('Home',['pagina'=>'Inicio','modelos'=>$modelos]);
+        return Inertia::render('Home',['pagina'=>'Inicio','destaques'=>$destaques,'modelos'=>$modelos]);
     }
 }
