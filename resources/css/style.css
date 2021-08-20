@@ -6,3 +6,9 @@
     background-size: contain;
     background-color: #181818;
 }
+
+.bg-site{
+    background-color: black;
+    background-image:url('/images/fundo01.png');
+    background-attachment: fixed;
+}

@@ -1,22 +1,25 @@
 <template>
-  <Layout :pagina="pagina">
-    <div class="w-full md:pl-4 lg:pl-10 md:pr-4 flex self-start flex-col mt-20">
-      <p>Teste arquivo Modelo: {{ modelos.nome }}</p>
-
+<Layout :pagina="pagina">
+    <div class="w-full sm:px-5 lg:px-10 flex self-start flex-col ">
+        <!-- Componente Slider -->
+        <Slider :modelos="modelos" />
     </div>
-  </Layout>
+</Layout>
 </template>
 
 <script>
 import Layout from "../Layout";
+import Slider from "../components/Home/Slider";
 export default {
-  props: {
-    pagina: String,
-    modelos: Object,
-  },
-  components: {
-    Layout,
-  },
+
+    props: {
+        pagina: String,
+        modelos: Array,
+    },
+    components: {
+        Layout,Slider
+    },
+
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="bg-site">
         <NavBar :pagina="pagina" />
             <article class="pt-20">
                     <slot/>
@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import NavBar from "./components/Navbar.vue";
-import Footer from "./components/Footer.vue";
+import NavBar from "./components/Global/Navbar.vue";
+import Footer from "./components/Global/Footer.vue";
 export default {
     components: {
         NavBar,
