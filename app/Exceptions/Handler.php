@@ -53,23 +53,22 @@ class Handler extends ExceptionHandler
      *
      * @throws \Throwable
      */
-    public function render($request, Throwable $exception)
-    {
-        
-        if ($exception instanceof ErrorException  && $request->expectsJson()) {
-            return response()->json(['message' => 'Erro na requisição. '.$exception->getMessage()], 404);
-        }
-        if ($exception instanceof NotFoundHttpException  && $request->expectsJson()) {
-            return response()->json(['message' => 'Caminho da Requisição não encontrado.'], 404);
-        }
-        
-        if ($exception instanceof ValidationException) {
+    public function render($request, Throwable $e)
+{
+    $response = parent::render($request, $e);
 
-            return response()->json(['message' => 'Não foi possível completar sua requisição.', 'errors' => $exception->validator->getMessageBag()], 422);
-        
-        }
-        return parent::render($request, $exception);
+    if (!app()->environment(['local', 'testing']) && in_array($response->status(), [500, 503, 404, 403])) {
+        return Inertia::render('Error', ['status' => $response->status()])
+            ->toResponse($request)
+            ->setStatusCode($response->status());
+    } else if ($response->status() === 419) {
+        return back()->with([
+            'message' => 'The page expired, please try again.',
+        ]);
     }
+
+    return $response;
+}
 
     protected function unauthenticated($request, AuthenticationException $exception)
     {
@@ -80,5 +79,5 @@ class Handler extends ExceptionHandler
         return redirect()->guest(route('semacesso'));
     }
 
-    
+
 }

@@ -12,6 +12,20 @@ class ModelosController extends Controller
     {
 
         $modelos = Modelo::all();
-        return Inertia::render('Modelos',['pagina'=>"Modelos"]);
+        return Inertia::render('Modelos',['pagina'=>"Modelos",'modelos'=>$modelos]);
+    }
+    public function modelo(Request $request)
+    {
+
+
+        $request->merge(['id' => $request->route('id')]);
+        $request->validate([
+            'id' => ['required','numeric']
+        ]);
+
+        $modelo = Modelo::find($request->id)->imagens()->get();
+
+        return Inertia::render('Modelo',['pagina'=>"Modelos",'modelo'=>$modelo]);
+
     }
 }

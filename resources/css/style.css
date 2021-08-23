@@ -12,22 +12,21 @@
     background-attachment: fixed;
 }
 .content-div {
-    background-image: url("https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80");
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .content-div:hover {
-    background-image: linear-gradient(
+    background: linear-gradient(
             to right,
-            rgba(126, 213, 111, 0.801),
-            hsla(160, 64%, 43%, 0.801)
-        ),
-        url("https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80");
+            rgba(255, 81, 0, 0.801),
+            hsla(0, 100%, 50%, 0.801)
+        )!important;
 }
 
 .image-cover {
-    height: 260px;
+    height: 350px;
 }
 /*
     -remove the classes below if you have the 'group-hover'property added in your tailwind config file

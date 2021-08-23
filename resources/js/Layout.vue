@@ -1,7 +1,7 @@
 <template>
     <main class="bg-site">
         <NavBar :pagina="pagina" />
-            <article class="pt-20">
+            <article class="pt-32">
                     <slot/>
             </article>
         <Footer />

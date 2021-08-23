@@ -20,6 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[HomeController::class, 'index']);
 Route::get('/modelos',[ModelosController::class, 'index']);
+Route::get('/modelo/{id}',[ModelosController::class, 'modelo']);
 Route::get('/acasa',[CasaController::class, 'index']);
 Route::get('/eventos',[EventosController::class, 'index']);
-Route::get('/contatos',[ContatosController::class, 'index']);
+Route::get('/contatos',[ContatosController::class, 'index'])->name('contatos');
+Route::post('/contatos',[ContatosController::class, 'store']);

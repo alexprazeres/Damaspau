@@ -6,7 +6,7 @@
     <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
         <div class="block pl-8 p-2">
             <a class="text-yellow-300 font-bold text-base no-underline hover:no-underline" href="#">
-                <img src="images/logowhite.png" width="150px">
+                <img src="/images/logowhite.png" width="150px">
             </a>
         </div>
         <div class="block lg:hidden pr-4">
@@ -28,9 +28,7 @@
                 <li class="mr-3">
                     <Link :class="(pagina == 'A Casa'?'md:border-b-4 border-pink-500 hover:text-white text-pink-500':'hover:text-pink-500')" class="inline-block hover:text-pink-500 md:no-underline md:hover:no-underline py-2 px-4 font-bold" href="/acasa">A Casa</Link>
                 </li>
-                <li class="mr-3">
-                    <Link :class="(pagina == 'Eventos'?'md:border-b-4 border-pink-500 hover:text-white text-pink-500':'hover:text-pink-500')" class="inline-block hover:text-pink-500 md:no-underline md:hover:no-underline py-2 px-4 font-bold" href="/eventos">Eventos</Link>
-                </li>
+
                 <li class="mr-3">
                     <Link :class="(pagina == 'Contatos'?'md:border-b-4 border-pink-500 hover:text-white text-pink-500':'hover:text-pink-500')" class="inline-block hover:text-pink-500 md:no-underline md:hover:no-underline py-2 px-4 font-bold" href="/contatos">Contatos</Link>
                 </li>
