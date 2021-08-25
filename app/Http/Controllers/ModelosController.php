@@ -23,9 +23,10 @@ class ModelosController extends Controller
             'id' => ['required','numeric']
         ]);
 
-        $modelo = Modelo::find($request->id)->imagens()->get();
+        $modelo = Modelo::where('id',$request->id)->with('imagens')->first();
+        $modelos = Modelo::where('ativo',1)->whereNotIn('id',[$modelo->id])->inRandomOrder()->limit(6)->get();
 
-        return Inertia::render('Modelo',['pagina'=>"Modelos",'modelo'=>$modelo]);
+        return Inertia::render('Modelo',['pagina'=>"Modelos",'modelo'=>$modelo,'modelos'=>$modelos]);
 
     }
 }

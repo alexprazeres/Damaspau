@@ -10,6 +10,7 @@
     background-color: black;
     background-image: url("/images/fundo01.png");
     background-attachment: fixed;
+    height: 100%;
 }
 .content-div {
 

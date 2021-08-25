@@ -1,7 +1,7 @@
 <template>
 <Link :href="'/modelo/'+modelo.id">
  <div class="py-4">
-    <div :style="'background-image: url('+modelo.capa+');'" class="shadow-lg group transition-all  rounded-md bg-white  max-w-sm flex justify-center items-center  mx-auto content-div">
+    <div :style="'background-image: url(/'+modelo.capa+');'" class="shadow-lg group transition-all  rounded-md bg-white  max-w-sm flex justify-center items-center  mx-auto content-div">
         <div class="w-100">
             <div class="w-full image-cover rounded-t-md">
 

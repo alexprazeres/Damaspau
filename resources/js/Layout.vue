@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-site">
+    <main class="bg-site h-auto">
         <NavBar :pagina="pagina" />
             <article class="pt-32">
                     <slot/>

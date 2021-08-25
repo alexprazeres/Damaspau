@@ -5,9 +5,9 @@
     <div id="progress" class="h-1 z-40 top-0" style="background:linear-gradient(to right, #FFC100 var(--scroll), transparent 0);"></div>
     <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
         <div class="block pl-8 p-2">
-            <a class="text-yellow-300 font-bold text-base no-underline hover:no-underline" href="#">
+            <Link href="/" class="text-yellow-300 font-bold text-base no-underline hover:no-underline">
                 <img src="/images/logowhite.png" width="150px">
-            </a>
+            </Link>
         </div>
         <div class="block lg:hidden pr-4">
             <button @click="exibirMenu = !exibirMenu" id="nav-toggle" class="flex items-center px-3 py-2 text-yellow-300 border-gray-600 focus:outline-none">
