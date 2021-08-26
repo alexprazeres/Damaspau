@@ -20,10 +20,10 @@
             <div class="p-5 w-1/2 sm:w-4/12 md:w-4/12">
                <!-- Col Title -->
                <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-                  LINKS
+                  LINKS RÁPIDOS
                </div>
                <!-- Links -->
-               <a href="#" class="
+               <Link href="/" class="
                   my-3
                   block
                   text-gray-300
@@ -32,9 +32,9 @@
                   font-medium
                   duration-700
                   ">
-               Configurationsda
-               </a>
-               <a href="#" class="
+               Início
+               </Link>
+                <Link href="/modelos"  class="
                   my-3
                   block
                   text-gray-300
@@ -43,9 +43,9 @@
                   font-medium
                   duration-700
                   ">
-               Theme Configuration
-               </a>
-               <a href="#" class="
+               Modelos
+               </Link>
+                <Link href="/acasa" class="
                   my-3
                   block
                   text-gray-300
@@ -54,9 +54,9 @@
                   font-medium
                   duration-700
                   ">
-               Breakpoints
-               </a>
-               <a href="#" class="
+               A Casa
+               </Link>
+               <Link href="/contatos" class="
                   my-3
                   block
                   text-gray-300
@@ -65,40 +65,9 @@
                   font-medium
                   duration-700
                   ">
-               Customizing Colors
-               </a>
-               <a href="#" class="my-3
-                  block
-                  text-gray-300
-                  hover:text-gray-100
-                  text-sm
-                  font-medium
-                  duration-700
-                  ">
-               Customizing Spacing
-               </a>
-               <a href="#" class="
-                  my-3
-                  block
-                  text-gray-300
-                  hover:text-gray-100
-                  text-sm
-                  font-medium
-                  duration-700
-                  ">
-               Configuring Variants
-               </a>
-               <a href="#" class="
-                  my-3
-                  block
-                  text-gray-300
-                  hover:text-gray-100
-                  text-sm
-                  font-medium
-                  duration-700
-                  ">
-               Plugins
-               </a>
+               Contatos
+               </Link>
+
             </div>
             <!-- Col-3 -->
             <div class="p-5 w-1/2 sm:w-4/12 md:w-4/12">
@@ -138,6 +107,13 @@
    </div>
 </template>
 <script>
-   export default {};
+import {
+    Link
+} from '@inertiajs/inertia-vue'
+   export default {
+       components:{
+           Link
+       }
+   };
 </script>
 <style></style>
