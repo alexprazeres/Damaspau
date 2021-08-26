@@ -40,7 +40,4 @@ Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais
 
 [⬆ Voltar ao topo](#nome-do-projeto)<br>
 
-OK1
-OK2
-Show!za
--LINHA EM BRANCH DEV-
+README FINAL DEV
