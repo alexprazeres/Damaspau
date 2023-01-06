@@ -1,43 +1,31 @@
-## Projeto Desenvolvido com: 
-<div style="display:inline">
-<a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="250"></a>
+# 2GO IB Bank
 
-<img width="200" src="https://user-images.githubusercontent.com/23483794/130079665-77e2d4b1-4015-4047-9940-2319f9d247ac.png">
-<img width="150" src="https://user-images.githubusercontent.com/23483794/130091622-f32418ef-5a5c-4a89-a2c3-5bd66370799b.png">
-</div>
+Aplicativo 2GO Bank
 
-## 💻 Pré-requisitos
+[![P](https://gitlab.com/ci2/2go-bank/-/blob/master/public/images/google-play.png)](https://play.google.com/store/apps/details?id=com.ib2gopag.app)
+[![AppStore](https://gitlab.com/ci2/2go-bank/-/blob/master/public/images/app-store.png)](https://apps.apple.com/br/app/2go-bank/id1603338816)
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente do PHP, Node, Composer.
+## Change Log
 
-## 🚀 Instalando 
+Todas as alterações notáveis a este projecto serão documentadas neste ficheiro.
 
-Para instalar, siga estas etapas:
+O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
+e este projecto adere a [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-Windows:
-```
-composer install
-npm install
+Desenvolvedor, por favor, sempre leve em consideração os seguintes tipos de mudanças durante seus commits:
 
-```
+Tipos de mudanças
+- Added/Adicionado para novos recursos.
+- Changed/Modificado para alterações em recursos existentes.
+- Deprecated/Obsoleto para recursos que serão removidos nas próximas versões.
+- Removed/Removido para recursos removidos nesta versão.
+- Fixed/Corrigido para qualquer correção de bug.
+- Security/Segurança em caso de vulnerabilidades.
 
-## ☕ Usando 
-
-Para iniciar e testar o projeto, siga estas etapas:
-
-```
-php artisan serve
-npm run watch
-
-```
+✨exemplo de commit:
+changed: Alterado cor de fundo do botão que leva a página da alegria  ✨   
 
 
-## 📝 Licença
+- [Visualizar change log](https://gitlab.com/ci2/2go-mobile/blob/master/CHANGELOG.md)
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
-
-[⬆ Voltar ao topo](#nome-do-projeto)<br>
-
-README FINAL DEV
+Changelogs são para humanos, não máquinas.
